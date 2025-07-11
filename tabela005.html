@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif ;
+            background-color: rgb(170, 214, 255);
+        }
+        h1 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-color: black;
+            width: 600px;
+            margin: auto;
+        }
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+            color: white;
+            background-color: rgb(0, 17, 63);
+        }
+        th,td {
+            color: rgb(252, 252, 252);
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .azul {
+            background-color: rgb(0, 153, 255);
+        }
+        .verde {
+            background-color: rgb(0, 177, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+    
+    <table>
+        <colgroup>
+            <col class="verde">
+            <col class="azul">
+            <col class="verde">
+            <col class="azul">
+            <!--pintar mais de uma coluna e so usar o span-->
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Rafael</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Joao</td>
+            <td>M</td>
+            <td>17</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Luana</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Medica</td>
+        </tr>
+    </table>
+</body>
+</html>
