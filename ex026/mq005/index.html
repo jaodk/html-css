@@ -6,10 +6,11 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <h1>Meu site</h1>
+        <h1>Media Queries</h1>
         <i id="burguer" class="fas fa-bars" onclick="clickmenu()"></i>
         <menu id="itens">
             <ul>
@@ -32,6 +33,13 @@
         </article>
     </main>
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
         function clickmenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
