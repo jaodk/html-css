@@ -61,6 +61,50 @@
             text-align: center;
             padding: 10px;
         }
+
+        @media screen and (max-width: 600px) {
+            * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            }
+            header#conteiner, main {
+                height: auto;
+            }
+            section#login {
+                width: 100vw;
+                min-width: 0;
+                padding: 10px;
+                font-size: 1.2em;
+            }
+            section#conteudo {
+                width: 90vw;
+                padding: 5px;
+                font-size: 0.95em;
+            }
+            section > h2 {
+                font-size: 1.3em;
+                padding: 5px;
+            }
+        }
+        @media screen and (max-width: 900px) {
+             * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            }
+            section#login {
+                width: 95vw;
+                height: 80%;
+                min-height: 200px;
+                padding: 20px;
+            }
+            section#conteudo {
+                width: 90vw;
+                padding: 10px;
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 <body>
