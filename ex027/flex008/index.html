@@ -18,9 +18,9 @@
             background-color: rgb(225, 0, 255);
             display:flex;
             flex-flow:row wrap;
-            align-content:start;
+            align-items: center;
             justify-content:space-around;
-            height: auto;
+            height: 500px;
         }
         div.item {
             color: white;
@@ -28,37 +28,49 @@
             border:1px solid rgb(255, 255, 255);
             padding: 40px;
             font-size: 2em;
+            flex: auto;
         }
+        
+        div#i1 {
+           order:0 ;
+           align-self: flex-end;
+        }
+        div#i2 {
+          order:-2 ;
+          align-self: flex-start;
+        }
+        div#i3 {
+          order:4 ;  
+          align-self: flex-start;
+        }
+        div#i4 {
+          order:8 ;
+          align-self: flex-end;  
+        }
+        div#i5 {
+          order:2 ; 
+          align-self: normal; 
+        }
+        div#i6 {
+         order:0 ; 
+         align-self:stretch ;  
+        }
+        div#i7 {
+         order:-4;
+         align-self:auto ;   
+        }
+        
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>
-        <div class="item">I</div>
-        <div class="item">J</div>
-        <div class="item">K</div>
-        <div class="item">L</div>
-        <div class="item">M</div>
-        <div class="item">N</div>
-        <div class="item">O</div>
-        <div class="item">P</div>
-        <div class="item">Q</div>
-        <div class="item">R</div>
-        <div class="item">S</div>
-        <div class="item">T</div>
-        <div class="item">U</div>
-        <div class="item">V</div>
-        <div class="item">W</div>
-        <div class="item">X</div>
-        <div class="item">Y</div>
-        <div class="item">Z</div>
+        <div id="i1" class="item">A</div>
+        <div id="i2" class="item">B</div>
+        <div id="i3" class="item">C</div>
+        <div id="i4" class="item">D</div>
+        <div id="i5" class="item">E</div>
+        <div id="i6" class="item">F</div>
+        <div id="i7" class="item">G</div>
     </div>
 </body>
 </html>
