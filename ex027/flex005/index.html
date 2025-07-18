@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(50, 180, 46);
+        }
+        header#conteiner {
+            display: flex;
+            background-color: rgb(48, 109, 31);
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+        }
+        section#login {
+            width: 800px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0, 0, 0); 
+        }
+        section#login > h1 {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        main {
+            display: flex;
+            background-color: rgb(2, 56, 0);
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+        }
+        section#conteudo {
+            display: block;
+            height: 370px;
+            width: 70vw;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            font-size: 1.2em;
+            text-align: justify;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.5;
+        }
+        section > h2 {
+            font-size: 2em;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="conteiner">
+        <section id="login">
+            <h1>TELA DE LOGIN</h1>
+        </section>
+    </header>
+    <main>
+        <section id="conteudo">
+            <h2>Titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste recusandae voluptatem ex atque molestiae facere ipsum incidunt necessitatibus iusto laboriosam! Quod harum quibusdam dolor! Possimus, facere. Nisi id amet ipsum?</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis molestias perspiciatis dolor cumque maxime. Maiores nam aliquid natus eveniet ex quo sequi error laborum eos iste, laudantium quisquam rem expedita.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus totam exercitationem nulla modi soluta eaque quia, impedit distinctio necessitatibus iusto repudiandae sed magni minus tempore eveniet officiis facilis suscipit ut.</p>
+        </section>
+    </main>
+        
+    
+</body>
+</html>
