@@ -5,33 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(37, 0, 46);
         }
         div.conteiner {
-            background-color: rgb(78, 0, 88);
+            background-color: rgb(225, 0, 255);
             display:flex;
-            /*flex-wrap: wrap;
-            flex-direction:row*/
             flex-flow:row wrap;
-            justify-content:end;
-            align-items:flex-end;
-            height: 400px;
-
+            align-content:start;
+            justify-content:space-around;
+            height: auto;
         }
         div.item {
             color: white;
-            background-color: rgb(164, 33, 168);
+            background-color: rgb(107, 0, 110);
             border:1px solid rgb(255, 255, 255);
-            padding: 10px;
-            height: 200px;
-            width: 100px;
-            display:flex;
-            align-items: center;
-            justify-content: center;
+            padding: 40px;
             font-size: 2em;
-            
+            align-items: center;
+            align-content: center;
+            margin: 3px;
+            cursor: pointer;
+            flex: auto;
         }
     </style>
 </head>
@@ -44,6 +45,25 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+        <div class="item">N</div>
+        <div class="item">O</div>
+        <div class="item">P</div>
+        <div class="item">Q</div>
+        <div class="item">R</div>
+        <div class="item">S</div>
+        <div class="item">T</div>
+        <div class="item">U</div>
+        <div class="item">V</div>
+        <div class="item">W</div>
+        <div class="item">X</div>
+        <div class="item">Y</div>
+        <div class="item">Z</div>
     </div>
 </body>
 </html>
