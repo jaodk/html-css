@@ -27,17 +27,23 @@
             border:1px solid rgb(255, 255, 255);
             text-align: center;
             padding: 10px;
-            flex-basis: 250px;
-            flex-shrink:1;
-            flex-grow:1;
+        }
+        div#cxA {
+            flex:3 1 200px;
+        }
+        div#cxB {
+            flex: 2 3 200px;
+        }
+        div#cxC {
+            flex:1 2 200px;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
     </div>
 </body>
 </html>
