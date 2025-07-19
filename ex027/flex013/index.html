@@ -3,50 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query</title>
+    <title>Flexbox</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body onresize="mudouTamanho()">
+<body>
     <header>
-        <h1>Media Queries</h1>
-        <i id="burguer" class="fas fa-bars" onclick="clickmenu()"></i>
-        <menu id="itens">
-            <ul>
-                <li><a href="#">Menu 1</a></li>
-                <li><a href="#">Menu 2</a></li>
-                <li><a href="#">Menu 3</a></li>
-                <li><a href="#">Menu 4</a></li>
-                <li><a href="#">Menu 5</a></li>
-            </ul>
-        </menu>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+            <a href="#">link 4</a>
+            <a href="#">link 5</a>
+            <a href="#">link 6</a>
+        </nav>
     </header>
     <main>
         <article>
-            <h2>Testando Media Queries</h2>
-            <p>As media queries são uma funcionalidade do CSS que permite aplicar estilos diferentes a uma página da web dependendo das características do dispositivo em que ela está sendo exibida, como largura da tela, altura, resolução ou orientação. Elas são fundamentais para criar layouts responsivos, que se adaptam automaticamente a diferentes tamanhos de tela, desde celulares até monitores grandes.</p>
+            <h2>Teste de Flexbox</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae perferendis, voluptatibus esse eius iste expedita quibusdam deleniti ipsa culpa corporis modi pariatur, labore sit laboriosam ipsum nobis ad officia perspiciatis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid mollitia autem praesentium incidunt, natus reprehenderit nostrum illum vero, ea vel ad dignissimos iure quisquam fugit ratione debitis. Voluptas, eum ut!</p>
 
-            <p>Com as media queries, é possível reorganizar elementos, alterar tamanhos de fonte, esconder ou mostrar seções, e muito mais, garantindo uma melhor experiência para o usuário em qualquer dispositivo. A lógica é simples: quando a condição definida na media query for atendida, os estilos dentro dela serão aplicados.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam dolor sint porro laudantium totam sequi aliquam rem culpa provident enim, ipsa dolorum officia tempore, vitae, sunt atque maxime eum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus doloribus cupiditate similique eius quam dolore, nam, reprehenderit saepe eos quia corrupti quis enim accusamus quidem inventore harum dolores? Corporis, fugiat!</p>
 
-            <p> Por exemplo, podemos definir que, em telas com largura máxima de 600 pixels, os textos sejam menores e o layout seja vertical. Assim, em vez de criar versões separadas de um site, utilizamos as media queries para fazer com que um único código se ajuste a diferentes situações. Isso torna o desenvolvimento mais eficiente e o site mais acessível e funcional em qualquer contexto de uso.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sint ea beatae eligendi consectetur, laudantium veritatis molestiae recusandae rerum minima voluptas dignissimos iure ipsa sunt! Blanditiis minus nostrum repellendus ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quibusdam, facere architecto aliquid pariatur iusto totam ab deserunt eveniet sapiente odio velit corrupti esse provident, reiciendis molestias, temporibus earum quo?</p>
         </article>
     </main>
-    <script>
-        function mudouTamanho() {
-            if (window.innerWidth >= 768) {
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
-        function clickmenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-    </script>
 </body>
 </html>
