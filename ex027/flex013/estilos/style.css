@@ -14,9 +14,9 @@ body, html {
     width: 100vw;
 }
 header {
-    flex-flow: row wrap;
     display: flex;
-    justify-content:space-between;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: rgb(129, 129, 129);
@@ -30,15 +30,18 @@ header > nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
+    
 }
 header > nav > a {
+    display: flex;
     color: white;
     background-color: black;
     padding: 10px;
     border: 1px solid white;
     border-radius: 5px;
     text-decoration: none;
-    text-align: center;
+    align-items: center;
+    justify-items:center;
 }
 nav > a:hover {
     color: black;
