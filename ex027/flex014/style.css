@@ -25,10 +25,13 @@ section.normal {
 
 .normal {
     margin: auto;
-    background-color: #FFF6F6; /* branco com leve rosa */
-    width: 1000px;
+    background-color: #FFF6F6;
+    max-width: 1000px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 p {
