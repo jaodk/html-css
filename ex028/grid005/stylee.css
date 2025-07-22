@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.5em;
+}
+.container {
+    padding: 20px;
+    margin: auto;
+    max-width: 1500px;
+    width: 100%;
+    border-radius: 30px;
+    background-color:rgb(216, 216, 216);
+    gap: 10px;
+    display: grid;
+    grid-template:
+    "header header"
+    "aside aside"
+    "article section"
+    "footer footer"
+    ;
+}
+.item {
+    border-radius: 20px;
+    color: white;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    
+
+}
+header {
+    grid-area: header;
+    background-color: rgb(23, 91, 194);
+    padding: 20px;
+}
+aside {
+    grid-area: aside;
+    background-color:rgb(0, 30, 68);
+    padding: 20px;
+    text-align: center;
+}
+article {
+    grid-area: article;
+    background-color: rgb(0, 132, 255);
+    padding: 20px;
+}
+section {
+    grid-area: section;
+    background-color: rgb(20, 55, 151);
+    padding: 20px;
+}
+footer {
+    grid-area: footer;
+    background-color: rgb(54, 96, 231);
+    padding: 20px;
+}
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.menu > a {
+    width: 120px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 10px;
+}
+.menu > a:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    text-decoration: underline;
+}
